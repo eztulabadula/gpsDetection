@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.iametza.gpsdetect" version="0.0.1">
+    <name>GPSDetect</name>
+    <description>Gps-a martxan dagoen egiaztatzen du plugin honek</description>
+    <license>Apache 2.0</license>
+    <author>Iametza interaktiboa</author>
+    <keywords>gps, detect</keywords>
+    <js-module src="www/gpsdetect.js" name="gpsdetect">
+       <clobbers target="navigator.gpsdetect" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">             
+             <feature name="GpsDetectionPlugin">
+                <param name="android-package" value="com.iametza.gpsdetect" />
+            </feature>
+        </config-file>    
+        <source-file src="src/android/GpsDetection.java" target-dir="src/com/iametza/gpsdetect" />
+    </platform>
+</plugin>
