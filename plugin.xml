@@ -15,7 +15,7 @@
     <!-- android -->
     <platform name="android">      
         <config-file target="res/xml/config.xml" parent="plugins">
-          <plugin name="GpsDetectionPlugin" value="com.iametza.plugin.GPSDetection"/>             
+          <plugin name="GpsDetection" value="com.iametza.plugin.GpsDetection"/>             
         </config-file>    
         <source-file src="src/android/com/iametza/plugin/GpsDetection.java" target-dir="src/com/iametza/plugin" />
     </platform>
