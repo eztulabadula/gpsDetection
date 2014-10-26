@@ -3,7 +3,7 @@ var cordova = require('cordova'),
 
 var gpsDetect = function() {
     checkGPS = function(successCallback, failureCallback) {
-        cordova.exec(successCallback, failureCallback, 'GpsDetectionPlugin', 'gpsDetection', []);
+        cordova.exec(successCallback, failureCallback, 'GpsDetection', 'gpsDetection', []);
     };
 };
 
