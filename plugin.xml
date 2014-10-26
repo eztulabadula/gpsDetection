@@ -6,7 +6,7 @@
     <description>Gps-a martxan dagoen egiaztatzen du plugin honek</description>
     <license>Apache 2.0</license>
     <author>Iametza interaktiboa</author>
-     <asset src="www/gpsdetect.js" target="plugins/gpsdetect.js" />
+     <asset src="www/GpsDetect.js" target="plugins/GpsDetect.js" />
   <engines>
     <engine name="cordova" version=">=2.7.0" />
   </engines>
