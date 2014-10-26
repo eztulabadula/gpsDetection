@@ -11,14 +11,12 @@
     <engine name="cordova" version=">=2.7.0" />
   </engines>
     <keywords>gps, detect</keywords>
-    <js-module src="www/gpsdetect.js" name="gpsdetect">
-       <clobbers target="navigator.gpsdetect" />
-    </js-module>
+    <asset src="www/GpsDetection.js" target="plugins/GpsDetection.js" />
     <!-- android -->
     <platform name="android">      
         <config-file target="res/xml/config.xml" parent="plugins">
-          <plugin name="GpsDetectionPlugin" value="com.iametza.gpsdetect"/>             
+          <plugin name="GpsDetectionPlugin" value="com.iametza.plugin.GPSDetection"/>             
         </config-file>    
-        <source-file src="src/android/GpsDetection.java" target-dir="src/com/iametza/gpsdetect" />
+        <source-file src="src/android/com/iametza/plugin/GpsDetection.java" target-dir="src/com/iametza/plugin" />
     </platform>
 </plugin>
