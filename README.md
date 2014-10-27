@@ -3,8 +3,14 @@ Gps detection plugin
 
 ##Usage
 
-cordova plugin add https://github.com/kklrd/gpsDetection.git
 
+Plugin-a instalatu
+
+```
+cordova plugin add https://github.com/kklrd/gpsDetection.git
+```
+
+Javascript-eko kodea
 
 ```
 var success = function(result){
