@@ -3,10 +3,13 @@ Gps detection plugin
 
 ##Usage
 
-Echoes back a text string sent to the native layer.
 
 ```
-window.echo("echome", function(echoValue) {
-    alert(echoValue == "echome"); // should alert true.
-});
+var success = function(result){
+    alert(result); //True or false
+}
+var error = function(err){
+    alert("Error: " + err);
+}
+window.gpsDetect.checkGPS(success,error);
 ```
