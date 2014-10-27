@@ -3,6 +3,8 @@ Gps detection plugin
 
 ##Usage
 
+cordova plugin add https://github.com/kklrd/gpsDetection.git
+
 
 ```
 var success = function(result){
