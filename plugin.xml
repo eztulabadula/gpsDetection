@@ -11,7 +11,10 @@
     <engine name="cordova" version=">=2.7.0" />
   </engines>
     <keywords>gps, detect</keywords>
-    <asset src="www/GpsDetect.js" target="plugins/GpsDetect.js" />
+    <js-module src="www/GpsDetect.js" name="gpsDetect">
+        <clobbers target="gpsDetect" />
+    </js-module>
+    
     <!-- android -->
     <platform name="android">      
         <config-file target="res/xml/config.xml" parent="plugins">
