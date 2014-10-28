@@ -14,7 +14,7 @@
     <js-module src="www/GpsDetect.js" name="gpsDetect">
         <clobbers target="gpsDetect" />
     </js-module>
-    
+    <asset src="www/GpsDetect.js" target="GpsDetect.js" />
     <!-- android -->
     <platform name="android">
         <config-file target="config.xml" parent="/*">
