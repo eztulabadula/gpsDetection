@@ -18,13 +18,15 @@ public class GpsDetection extends CordovaPlugin {
         boolean gpsEnabled = false;
         String GPSDetectionAction = "gpsDetection";
         
-        if (action.equals(GPSDetectionAction)) {
+        if (GPSDetectionAction.equals(action)) {
         	android.content.ContentResolver contentResolver = cordova.getActivity().getApplicationContext().getContentResolver();
         	gpsEnabled = Settings.Secure.isLocationProviderEnabled(contentResolver, LocationManager.GPS_PROVIDER);
-        	result = new PluginResult(Status.OK, gpsEnabled);
+        	//result = new PluginResult(Status.OK, gpsEnabled);
+		result = true;
         }
         else {
-            result = new PluginResult(Status.INVALID_ACTION);
+            //result = new PluginResult(Status.INVALID_ACTION);
+	    result = false;
         }
         
         callbackContext.sendPluginResult(result);
