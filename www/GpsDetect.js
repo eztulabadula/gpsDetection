@@ -3,7 +3,7 @@ var cordova = require('cordova'),
 
 function GpsDetect(){};
 GpsDetect.prototype.checkGPS = function(successCallback, failureCallback) {
-    console.log("hunastaño");
+    console.log(successCallback);
         exec(successCallback, failureCallback, 'GpsDetection', 'gpsDetection', []);
     }
 var gpsDetect = new GpsDetect();
