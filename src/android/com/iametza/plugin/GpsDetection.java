@@ -1,4 +1,4 @@
-package com.iametza.plugin;
+package com.iametza.plugin.GpsDetection;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -20,12 +20,10 @@ public class GpsDetection extends CordovaPlugin {
         if (GPSDetectionAction.equals(action)) {
         	android.content.ContentResolver contentResolver = cordova.getActivity().getApplicationContext().getContentResolver();
         	gpsEnabled = Settings.Secure.isLocationProviderEnabled(contentResolver, LocationManager.GPS_PROVIDER);
-        	result = new PluginResult(Status.OK, gpsEnabled);
-		Log.v("Egoera", "OK");
+        	result = new PluginResult(Status.OK, gpsEnabled);		
         }
         else {
-            result = new PluginResult(Status.INVALID_ACTION);
-	    Log.v("Egoera", "Fail");
+            result = new PluginResult(Status.INVALID_ACTION);	    
         }
         
         callbackContext.sendPluginResult(result);
