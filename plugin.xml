@@ -6,12 +6,12 @@
     <description>Gps-a martxan dagoen egiaztatzen du plugin honek</description>
     <license>Apache 2.0</license>
     <author>Iametza interaktiboa</author>
-     <asset src="www/GpsDetect.js" target="plugins/GpsDetect.js" />
+   
   <engines>
     <engine name="cordova" version=">=2.7.0" />
   </engines>
     <keywords>gps, detect</keywords>
-    <js-module src="www/GpsDetect.js" name="gpsDetect">
+    <js-module src="www/GpsDetect.js" name="GpsDetection">
         <clobbers target="gpsDetect" />
     </js-module>
     
@@ -22,5 +22,6 @@
                 <param name="android-package" value="com.iametza.plugin.GpsDetection"/>
             </feature>
         </config-file>
+         <source-file src="src/android/GpsDetection.java" target-dir="src/com/iametza/plugin" />
     </platform>    
 </plugin>
