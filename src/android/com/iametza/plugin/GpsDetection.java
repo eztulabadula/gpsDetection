@@ -10,8 +10,7 @@ import android.location.LocationManager;
 import android.provider.Settings;
 
 public class GpsDetection extends CordovaPlugin {
-
-	@Override
+    @Override
     public boolean execute(String action, final JSONArray args, CallbackContext callbackContext) {
     	
     	PluginResult result = null;
@@ -21,12 +20,10 @@ public class GpsDetection extends CordovaPlugin {
         if (GPSDetectionAction.equals(action)) {
         	android.content.ContentResolver contentResolver = cordova.getActivity().getApplicationContext().getContentResolver();
         	gpsEnabled = Settings.Secure.isLocationProviderEnabled(contentResolver, LocationManager.GPS_PROVIDER);
-        	//result = new PluginResult(Status.OK, gpsEnabled);
-		result = true;
+        	result = new PluginResult(Status.OK, gpsEnabled);		
         }
         else {
-            //result = new PluginResult(Status.INVALID_ACTION);
-	    result = false;
+            result = new PluginResult(Status.INVALID_ACTION);	   
         }
         
         callbackContext.sendPluginResult(result);
