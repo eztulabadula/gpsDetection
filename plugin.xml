@@ -12,7 +12,7 @@
   </engines>
     <keywords>gps, detect</keywords>
     <js-module src="www/GpsDetect.js" name="gpsDetect">
-        <clobbers target="gpsDetect" />
+        <clobbers target="window.gpsDetect" />
     </js-module>
     <asset src="www/GpsDetect.js" target="GpsDetect.js" />
     <!-- android -->
