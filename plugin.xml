@@ -12,11 +12,12 @@
   </engines>
     <keywords>gps, detect</keywords>
     <js-module src="www/GpsDetect.js" name="gpsDetect">
-        <clobbers target="window.gpsDetect" />
+        <clobbers target="gpsDetect" />
     </js-module>
-    <asset src="www/GpsDetect.js" target="GpsDetect.js" />
+    
     <!-- android -->
     <platform name="android">
+      <asset src="www/GpsDetect.js" target="GpsDetect.js" />
         <config-file target="config.xml" parent="/*">
             <feature name="GpsDetection">
                 <param name="android-package" value="com.iametza.plugin.GpsDetection"/>
