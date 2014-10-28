@@ -1,4 +1,4 @@
-package com.iametza.plugin.GpsDetection;
+package com.iametza.plugin;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
